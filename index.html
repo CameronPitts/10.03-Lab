@@ -1,25 +1,25 @@
 <!doctype html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>CS208 - Starter Code (UPDATE ME)!</title>
-  <meta name="description" content="">
+  <title>CS208 - To-Do List</title>
+  <meta name="description" content="A simple interactive to-do list.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <h1>HTML Rocks!!</h1>
-  <ul>
-  <li><a href="/hello">Click here to say hello</a></li>
-  <li><button id="hello-link">Click Me!</button></li>
-  <li><button id="joke-button">Dad Joke!</button></li>
-  <script src="script.js"></script>
-  </ul>
-  <img src="funny.png" alt="Funny Image" width="300" height="200">
+  <main>
+    <h1>To-Do List</h1>
 
-  <h2 id="joke-display"></h2>
+    <div class="task-entry">
+      <label for="new-task">New task:</label>
+      <input id="new-task" type="text" autocomplete="off">
+      <button id="add-button" type="button">Add</button>
+    </div>
+
+    <ol id="task-list" aria-label="Tasks"></ol>
+  </main>
 </body>
-
 </html>
